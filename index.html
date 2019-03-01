@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-
-    <style media="screen">
-      .character {
-        display: flex;
-        width: 550px;
-        justify-content: space-between;
-      }
-    </style>
-  </head>
-  <body>
-
-    <div id="characters">
-
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SWAPI</title>
+	<!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+	<div class="text-center judul">
+        <img src="" alt="">
+        <h1 class="h1">STAR WARS API</h1>
+        <hr>
     </div>
-
-    <script src="sw.js" charset="utf-8"></script>
-  </body>
+	<div class="container">
+		<br>
+		<h3>Data Karakter Star Wars</h3>
+		<label for="filter_select">Filter</label>
+		<select id="filter_select">
+		  <option value="Semua">Semua</option>
+		  <option value="Name">Name</option>
+		</select>
+		<br>
+		<div id="tabel_data">
+			<p>Not Found</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
 </html>
